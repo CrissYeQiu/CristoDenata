@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+    height: 50px;
+    width: 100%;
+    background: #fdf2f6;
+    border-bottom: 1px solid rgb(244, 216, 216);
+    position: fixed;
+    z-index: 999;
+}
+
+/* Logo Hana */
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+}
+
+/* Isi Menu */
+.menu a{
+    color: #0057d8;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3 ease;
+    font-weight: 600;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: #003c99;
+}
+
+/* Pendaftaran */
+.pendaftaran{
+    display: flex;
+    gap: 5px;
+}
+
+/* Tombol Daftar */
+.pendaftaran .daftar{
+    color: rgb(3, 141, 255);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+}
+.pendaftaran .daftar:hover{
+    background-color: #0057d8;
+    color: #fdf2f6;
+}
+.pendaftaran .daftar:active{
+    background-color: #0057d8;
+    color: #fdf2f6;
+}
+
+/* Tombol Masuk */
+.pendaftaran .masuk{
+    color: rgb(3, 141, 255);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+}
+.pendaftaran .masuk:hover{
+    background-color: #0057d8;
+    color: #fdf2f6;
+}
+.pendaftaran .masuk:active{
+    background-color: #0057d8;
+    color: #fdf2f6;
+}
+
+/* Konten */
+.konten {
+    position: relative;
+    width: 100%;
+    height: 585px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.konten img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.konten .teks {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+.konten .teks h2 {
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.konten .teks p {
+    margin-top: -20px;
+    font-size: 16px;
+    color: white;
+    padding-top: 8px;
+}
+
+/* Tentang */
+#tentang{
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+#tentang .teks{
+    text-align: center;
+    padding: 0 20px;
+    max-width: 900;
+    margin: 0 20%;
+}
+#tentang .teks h3{
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+/* Tentang Pemiik */
+#tentang .pemilik{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+#tentang .pemilik .foto{
+    text-align: center;
+}
+#tentang .pemilik img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#tentang .pemilik h4{
+    margin-top: 10px;
+    font-size: 24px;
+}
+#tentang .pemilik .bio{
+    width: 60%;
+}
+#tentang .pemilik .bio p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Produk */
+#produk {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+    background: #fdf2f6;
+}
+/* Deskripsi bawah produk */
+#produk .bio{ 
+    width: 50%;
+    align-items: center;
+    text-align: justify;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+/* Table Bunga */
+.produk-bunga {
+    width: 80%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+.produk-bunga td{
+    padding: 20px;
+    background: white;
+    border: 2px solid #f8c6d3;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.produk-bunga td img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.produk-bunga td .teks{
+    padding-bottom: 8px;
+}
+.produk-bunga td:hover{
+    border-color: #e86a8e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.produk-bunga td p{
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* ULASAN ChatGpt */
+.reviews {
+    padding: 50px 20px;
+    background: #fafafa;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.review-card {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff8fb1;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.review-card span {
+    font-size: 14px;
+    color: #777;
+    display: block;
+}
