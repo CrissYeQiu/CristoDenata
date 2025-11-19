@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- NAVBAR -->
     <div class="navbar">
         <img src="img/logo.png" class="logo" alt="">
 
         <nav class="menu">
-            <a href="#beranda">Beranda</a>
-            <a href="#tentang">Tentang</a>
-            <a href="#produk">Produk</a>
-            <a href="#ulasan">Ulasan</a>
-            <a href="#">Kontak</a>
+            <a href="index.html#beranda">Beranda</a>
+            <a href="index.html#tentang">Tentang</a>
+            <a href="index.html#produk">Produk</a>
+            <a href="index.html#ulasan">Ulasan</a>
+            <a href="index.html#kontak">Kontak</a>
         </nav>
 
         <div class="pendaftaran">
-            <a class="daftar" href="">Daftar</a>
-            <a class="masuk" href="">Masuk</a>
+            <a class="daftar" href="daftar.html">Daftar</a>
+            <a class="masuk" href="masuk.html">Masuk</a>
         </div>
     </div>
+<!-- NAVBAR PENUTUP -->
 
+<!-- Masuk Konten -->
     <div class="konten" id="beranda">
         <img src="img/bg.jpg" alt="">
         <div class="teks">
@@ -79,21 +82,49 @@
         <div class="review-card">
             <h3>⭐️⭐️⭐️⭐️⭐️</h3>
             <p>"Buket bunganya cantik banget! Kualitasnya premium dan pengiriman cepat. Sangat puas!"</p>
-            <span>- Diana, Jakarta</span>
+            <span>- Anonim, Singosoro</span>
         </div>
 
         <div class="review-card">
             <h3>⭐️⭐️⭐️⭐️⭐️</h3>
             <p>"Warnanya pas, rangkaiannya rapi, dan wangi! Cocok banget buat hadiah spesial."</p>
-            <span>- Rizky, Bandung</span>
+            <span>- Anonim, Lowong</span>
         </div>
 
         <div class="review-card">
             <h3>⭐️⭐️⭐️⭐️</h3>
             <p>"Bagus dan elegan. Akan order lagi untuk acara berikutnya!"</p>
-            <span>- Melisa, Surabaya</span>
+            <span>- Anonim, Polehono</span>
         </div>
     </section>
 
+    <section id="kontak">
+        <h1>Kirim Pesan Kepada Kami</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" name="txtuser" id="" placeholder="Maksimal 20 Karakter" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="txtemail" id="" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td>Komentar</td>
+                    <td><textarea name="txtkomentar" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Batalkan" name="tblbatal"></td>
+                    <td><input type="reset" value="Hapus" name="tblhapus"></td>
+                    <td><input type="submit" value="Kirim" name="tblkirim"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <footer>
+        <p>NoCopyRight &copy;2025 Toko Hana alias <span class="Ye">YeQiu</span>. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

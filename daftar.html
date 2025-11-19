@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+    <div class="navbar">
+        <img src="img/logo.png" class="logo" alt="Logo">
+
+        <nav class="menu">
+            <a href="index.html#beranda">Beranda</a>
+            <a href="index.html#tentang">Tentang</a>
+            <a href="index.html#produk">Produk</a>
+            <a href="index.html#ulasan">Ulasan</a>
+            <a href="index.html#kontak">Kontak</a>
+        </nav>
+
+        <div class="pendaftaran">
+            <a class="daftar active" href="daftar.html">Daftar</a>
+            <a class="masuk" href="masuk.html">Masuk</a>
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- FORM DAFTAR -->
+    <div class="bg-daftar">
+        <section class="form-daftar">
+            <div class="form-card">
+                <h2>Buat Akun Baru</h2>
+                <form action="masuk.html" method="get">
+                    <label>Nama Lengkap</label>
+                    <input type="text" name="nama" placeholder="Masukkan Nama Anda" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Minimal 6 karakter" required>
+                    <label>Konfirmasi Password</label>
+                    <input type="password" name="confirm" placeholder="Ulangi password" required>
+                    <button type="submit" class="btn-daftar">Daftar</button>
+                    <p class="login-text">
+                        Sudah punya akun? <a href="masuk.html">Masuk</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
